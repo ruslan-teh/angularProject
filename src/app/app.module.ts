@@ -2,27 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { UsersComponent } from './components/users/users.component';
-import { PostsComponent } from './components/posts/posts.component';
-import { CommentsComponent } from './components/comments/comments.component';
-import { UserComponent } from './components/user/user.component';
 import {HttpClientModule} from "@angular/common/http";
-import { PostComponent } from './components/post/post.component';
-import { CommentComponent } from './components/comment/comment.component';
+import { HeaderComponent } from './components/header-components/header/header.component';
+import { HomePageComponent } from './components/home-page-components/home-page/home-page.component';
+import {AppRoutingModule} from "./app-routing.module";
+import { PostDetailsComponent } from './components/post-components/post-details/post-details.component';
+import { CommentDetailsComponent } from './components/comment-components/comment-details/comment-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent,
-    PostsComponent,
-    CommentsComponent,
-    UserComponent,
-    PostComponent,
-    CommentComponent
+    HeaderComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
