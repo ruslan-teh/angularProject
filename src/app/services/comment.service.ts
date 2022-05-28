@@ -15,4 +15,8 @@ export class CommentService {
   getAll(): Observable<IComment[]> {
     return this.httpclient.get<IComment[]>(urls.comments);
   }
+
+  getById(id: string): Observable<IComment> {
+    return this.httpclient.get<IComment>(`${urls.comments}/${id}`);
+  }
 }
