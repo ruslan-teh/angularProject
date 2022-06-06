@@ -1,3 +1,3 @@
-export * from './IComment';
-export * from './IPost';
+export * from './ICar';
 export * from './IUser';
+export * from './IToken';
